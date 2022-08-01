@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        } 
+        html{
+            background-color: rgb(27, 27, 25);
+        }
+        header{
+            width: 100%;
+            height: 60px;
+            padding: 20px;
+            
+        }
+        .div1{
+            display:inline;
+            float: left;
+            color: white;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            width: 50%;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .div2{
+            display: inline;
+            float: right;
+            color: white;
+            width: 20%;
+            text-align:left;
+            font-size: 15px;
+        }
+        .div2 a{
+            margin: 5px;
+        }
+        a:hover{
+            background-color: rgb(27, 27, 25);
+    text-decoration: none;
+    
+    padding: 1%;
+}
+        a{
+    text-decoration: none;
+    color: white;
+    font-size: 20x;
+}
+body {
+    font-family: 'Roboto', sans-serif!important;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.mainscreen
+{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #DFDBE5;
+    background-image: url(img/check.webp);
+    color:#963E7B;
+}
+
+.card {
+    width: 60rem;
+    margin: auto;
+    background: white;
+    position:center;
+    align-self: center;
+    top: 50rem;
+    border-radius: 1.5rem;
+    box-shadow: 4px 3px 20px #3535358c;
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.leftside {
+    background: linear-gradient(
+135deg
+, #753370 0%, #298096 100%);;
+    width: 25rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+
+.product {
+    object-fit: cover;
+    width: 20em;
+    height: 30em;
+    
+}
+
+.rightside {
+    background-color: #ffffff;
+    width: 35rem;
+    border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    padding: 1rem 2rem 3rem 3rem;
+}
+
+p{
+    display:block;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: .8rem 0;
+}
+
+.inputbox
+{
+    color:rgb(248, 190, 250);
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1.5px solid #ccc;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    font-family: 'Roboto', sans-serif;
+    color: #615a5a;
+    font-size: 1.1rem;
+    font-weight: 500;
+outline:none;
+}
+
+.expcvv {
+    display:flex;
+    justify-content: space-between;
+    padding-top: 0.6rem;
+}
+
+.expcvv_text{
+    padding-right: 1rem;
+}
+.expcvv_text2{
+    padding:0 1rem;
+}
+
+.button{
+    background: linear-gradient(
+135deg
+, #753370 0%, #298096 100%);
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    width:100%;
+    letter-spacing: .11rem;
+    outline:none;
+}
+
+.button:hover
+{
+    transform: scale(1.05) translateY(-3px);
+    box-shadow: 3px 3px 6px #38373785;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="div1"><strong>Game Station </strong></div>
+        <div class="div2">
+        
+        <a href="game6.html">return</a>
+        
+        </div>
+    </header>
+    
+    <div class="mainscreen">
+        
+        <div class="card">
+            <div class="leftside">
+            <img src="img/spiderman2.jpg" class="product"   />
+            </div>
+            <form action="submit.html" method="get">
+            <div class="rightside">
+            
+                <h1>CheckOut</h1>
+                <h2>Payment info</h2>
+                <label>Fname & Lname</label>
+                <input type="text" class="inputbox" name="name" required />
+                <label>card number </label>
+                <input type="text" class="inputbox" name="card_number" id="card_number" required />
+    
+                <p>payment type </p>
+                <select class="inputbox" name="card_type" id="card_type" required>
+                <option value=""> Please Choose!</option>
+                <option value="Visa">Saman</option>
+                <option value="RuPay">Pasargad</option>
+                <option value="MasterCard">Saderat</option>
+                </select>
+    <div class="expcvv">
+    
+                <label class="expcvv_text">Expiration</label>
+                <input type="date" class="inputbox" name="exp_date" id="exp_date" required/>
+    
+                <label class="expcvv_text2">CVV2</label>
+                <input type="password" class="inputbox" name="cvv" id="cvv" required />
+            </div>
+                <p></p>
+            
+                <button class="button" >the payment</button>
+            
+                            </form>
+            
+            </div>
+        </div>
+        </div>
+
+</body>
+
+</html>

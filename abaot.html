@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abaot</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+               header{
+            width: 100%;
+            height: 60px;
+            padding: 20px;
+           
+        }
+        .div1{
+            display:inline;
+            float: left;
+            color: white;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            width: 50%;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .div2{
+            display: inline;
+            float: right;
+            color: white;
+            width: 30%;
+            text-align:left;
+            font-size: 15px;
+        }
+        .div2 a{
+            margin: 5px;
+        }
+        a:hover{
+       background-color: rgb(27, 27, 25);
+      text-decoration: none;
+      
+       padding: 3%;
+   }
+   a{
+       text-decoration: none;
+       color: white;
+       font-size: 20x;
+   }
+ 
+body{
+  margin: 0;
+   padding: 0;
+   font-family:  'Montserrat', sans-serif;
+   background: linear-gradient(to right, rgb(25, 25, 27) 0%, #383838 100%);
+  background-size: cover;
+  height: 100%;
+ 
+}
+.about-section{
+  width: 70%;
+background:#fff;
+  padding: 40px 0;
+  margin-left: auto;
+  margin-right:auto;
+  margin-top: 170px;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+border-radius: 30px;
+border-left: 50px solid #2e2e2e;
+border-right: 50px solid #393f3d;
+ 
+ 
+}
+.inner-width{
+  max-width: 1000px;
+  overflow: hidden;
+  padding: 0 20px;
+  margin: auto;
+}
+.about-section h1{
+  text-align: center;
+}
+.border{
+  width: 100px;
+  height: 3px;
+  background: #313131;
+  margin: 40px auto;
+}
+.about-section-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-section-col{
+  flex: 50%;
+}
+.about{
+  padding-right: 30px;
+}
+.about p{
+  text-align: justify;
+  margin-bottom: 20px;
+  color: #2c2c2c;
+  font-size: 17px;
+}
+.about a{
+  display: inline-block;
+  color: #7E7C7A;
+  text-decoration: none;
+  border: 2px solid #0c0c0c;
+  border-radius: 24px;
+  padding: 8px 40px;
+  transition: 0.4s linear;
+}
+.about a:hover{
+  color: #fff;
+  background: #202020;
+}
+.skills{
+  padding-left: 30px;
+}
+.skill{
+  margin-bottom: 10px;
+}
+.title{
+  color: #7E7C7A
+}
+.progress{
+  width: 100%;
+  height: 12px;
+  background: #ddd;
+  border-radius: 12px;
+}
+.progress-bar{
+  height: 12px;
+  background:linear-gradient(#95c3ff,#9047cc) ;
+  border-radius: 12px;
+}
+.p1{
+  width: 90%;
+}
+.p2{
+  width: 70%;
+}
+.p3{
+  width: 50%;
+}
+.progress-bar span{
+  float: right;
+  margin-right: 6px;
+  line-height: 13px;
+  color: #fff;
+  font-size: 12px;
+}
+@media screen and (max-width:700px) {
+  .about-section-col{
+    flex: 100%;
+    margin: 10px 0;
+  }
+  .about,.skills{
+    padding: 0;
+  }
+  .about{
+    text-align: center;
+  }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="div1"><strong>Game Station </strong></div>
+        <div class="div2">
+           <a href="index.html">Home</a>
+           <a href="page2.html">Menu</a>
+           
+        </div>
+    </header>
+    <main>
+        <!DOCTYPE html>
+        <html lang="en" dir="ltr">
+          <head>
+            <meta charset="utf-8">
+            <title></title>
+            <link rel="stylesheet" href="style.css">
+            <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+        
+        
+          </head>
+          <body>
+              <div class="about-section">
+                <div class="inner-width">
+                  <h1>About Us</h1>
+                  <div class="border"></div>
+                  <div class="about-section-row">
+                    <div class="about-section-col">
+                      <div class="about">
+                        <p>
+                            Hello, My Name is ReyhaneJafari. I am from Tehran and I am 20 years old, I study software at Shariati Technical University. I am very interested in graphics, programming, game development and gaming. I know little about any technology and try to update my knowledge. The purpose of building this site is to challenge my abilities and the use of you dear ones. Hope you enjoy!
+                        </p>
+                        <a href="#">Read More</a>
+                      </div>
+                    </div>
+                    <div class="about-section-col">
+                      <div class="skills">
+                        <div class="skill">
+                          <div class="title">Motion Designer</div>
+                          <div class="progress">
+                            <div class="progress-bar p1"><span>90%</span></div>
+                          </div>
+                        </div>
+        
+                        <div class="skill">
+                          <div class="title">Programmer</div>
+                          <div class="progress">
+                            <div class="progress-bar p2"><span>70%</span></div>
+                          </div>
+                        </div>
+        
+                        <div class="skill">
+                          <div class="title">UX/UX Design</div>
+                          <div class="progress">
+                            <div class="progress-bar p3"><span>40%</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </body>
+        </html>
+    </main>
+   
+</body>
+</html>
